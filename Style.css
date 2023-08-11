@@ -1,4 +1,12 @@
-body{
+.bodyContacts{
+    background-color: #f3e5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyCategory{
     background-color: #f3e5f5;
     display: flex;
     flex-direction: column;
@@ -30,7 +38,8 @@ ul {
   }
 
   i {
-    color: #9c27b0;
+    /* color: #9c27b0; */
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,5 +71,28 @@ font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 h2{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.divHair {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: fit-content;
+    float: left;
+    border: 2px solid black; 
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+img{
+    width: fit-content;
+    height : 250px;
+}
+
+
+
+/* .divHair,body{
+    float: left;
+} */
