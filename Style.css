@@ -14,6 +14,17 @@
     justify-content: space-between;
 }
 
+.bodylogin {
+    margin: 0;
+    background-color: #f3e5f5;
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
 .divPictures{
     display: flex;
     flex-direction: row; 
@@ -149,6 +160,63 @@ img{
       transform: scaleX(1.03) scaleY(1.03) translate3d(0,0,20px);
   }
 
+  input[type=text], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .loginbutton {
+    background-color: #9c27b0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  
+  .loginbutton:hover {
+    background-color: #ce93d8;
+    transform: scaleX(1.03) scaleY(1.03) translate3d(0,0,20px);
+  }
+
+  * {box-sizing: border-box;}
+
+  form {
+    border: 3px solid #f1f1f1;
+  }
+
+  .divlogin {
+	text-align: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    transition:.3s ease-in-out;
+    padding: 10px;
+}
+
+span.psw {
+    float: center;
+    padding-top: 16px;
+  }
+  
+  .card-trip > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+span {
+      float: center;
+  }
 
 /* .divHair,body{
     float: left;
