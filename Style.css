@@ -1,9 +1,37 @@
-body{
+.bodyContacts{
     background-color: #f3e5f5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.bodyCategory{
+    background-color: #f3e5f5;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bodylogin {
+    margin: 0;
+    background-color: #f3e5f5;
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+.divPictures{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    background-color: #f3e5f5;
 }
 
 div{
@@ -16,10 +44,11 @@ div{
     transition:.3s ease-in-out;
     
 }
-
-div:hover{
+.divContacts:hover{
     transform: scaleX(1.05) scaleY(1.05) translate3d(0,0,20px);
 }
+
+
 
 ul {
     display: flex;
@@ -29,12 +58,24 @@ ul {
     list-style-type: none;
   }
 
-  i {
-    color: #9c27b0;
+i {
+    /* color: #9c27b0; */
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+option {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
 }
  
 ul {
@@ -46,9 +87,21 @@ ul {
 }
 
 header {
+    align-items: center;
+    text-align: center;
+}
+
+header,.logo {
     background-color:#e1bee7;
     width: 102%;
     text-align: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
 }
 
 
@@ -62,5 +115,109 @@ font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 h2{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.divHair {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: fit-content;
+    float: left;
+    border: 2px solid black; 
+    padding: 10px;
+    background-color: whitesmoke;
+    margin: 15px;
+}
+
+.divHair:hover{
+    transform: scaleX(1.05) scaleY(1.05) translate3d(0,0,20px);
+}
+
+img{
+    width: fit-content;
+    height : 250px;
+}
+
+.buttonn {
+    display: block;
+    width: 10%;
+    text-align: center; /* Align text to the left within the button */
+    padding: 10px;
+    border: 1px solid #e1bee7;
+    background-color: #e1bee7;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #e1bee7;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    margin: 5px;
+  }
+
+  .buttonn:hover{
+    background-color: #ce93d8;
+      /* color: #ce93d8; */
+      transform: scaleX(1.03) scaleY(1.03) translate3d(0,0,20px);
+  }
+
+  input[type=text], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .loginbutton {
+    background-color: #9c27b0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  
+  .loginbutton:hover {
+    background-color: #ce93d8;
+    transform: scaleX(1.03) scaleY(1.03) translate3d(0,0,20px);
+  }
+
+  * {box-sizing: border-box;}
+
+  form {
+    border: 3px solid #f1f1f1;
+  }
+
+  .divlogin {
+	text-align: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    transition:.3s ease-in-out;
+    padding: 10px;
+}
+
+span.psw {
+    float: center;
+    padding-top: 16px;
+  }
+  
+  .card-trip > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+span {
+      float: center;
+  }
+
+/* .divHair,body{
+    float: left;
+} */
