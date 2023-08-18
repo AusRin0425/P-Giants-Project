@@ -1,3 +1,5 @@
+
+
 .bodyContacts{
     background-color: #f3e5f5;
     display: flex;
@@ -34,7 +36,21 @@
     background-color: #f3e5f5;
 }
 
-div{
+.HairHeader img
+    {
+      
+        background-color: none;
+        width : 1800px;
+        height: 650px;
+        background-size: cover;
+        padding-left: 100px;
+        /* max-width: 1000px; */
+        /* background-image: url(IMG-20230818-WA0006.jpg); */
+        background-size: cover;
+        
+    }
+
+/* div{
     background-color: #e1bee7;
     width: 500px;
     height: fit-content;
@@ -43,6 +59,17 @@ div{
     text-align: center;
     transition:.3s ease-in-out;
     
+} */
+.divContacts
+{
+   
+    background-color: #e1bee7;
+    width: 500px;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 10%;
+    text-align: center;
+    transition:.3s ease-in-out;
 }
 .divContacts:hover{
     transform: scaleX(1.05) scaleY(1.05) translate3d(0,0,20px);
@@ -60,7 +87,7 @@ ul {
 
 i {
     /* color: #9c27b0; */
-    color: whitesmoke;
+    color: purple;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,7 +97,8 @@ i {
 a {
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: whitesmoke;
+    font-weight: bold;
+    color: black;
 }
 
 option {
@@ -89,11 +117,12 @@ ul {
 header {
     align-items: center;
     text-align: center;
+    
 }
 
 header,.logo {
     background-color:#e1bee7;
-    width: 102%;
+    width: 103%;
     text-align: center;
     display: flex;
     align-items: flex-start;
@@ -129,6 +158,8 @@ h2{
     padding: 10px;
     background-color: whitesmoke;
     margin: 15px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .divHair:hover{
@@ -149,7 +180,7 @@ img{
     background-color: #e1bee7;
     transition: background-color 0.3s, color 0.3s;
     border: 2px solid #e1bee7;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  Arial, Helvetica, sans-serif;
     border-radius: 20px;
     margin: 5px;
   }
@@ -180,6 +211,13 @@ img{
     width: 50%;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
+
+  .btnCatProd
+    {
+        background:  transparent;
+        border-color:  #9c27b0 ;
+        
+    }
   
   
   .loginbutton:hover {
