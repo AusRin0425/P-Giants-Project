@@ -36,7 +36,7 @@
     background-color: #f3e5f5;
 }
 
-.HairHeader img
+/* .HairHeader img
     {
       
         background-color: none;
@@ -46,8 +46,13 @@
         padding-left: 100px;
         /* max-width: 1000px; */
         /* background-image: url(IMG-20230818-WA0006.jpg); */
-        background-size: cover;
+        /*background-size: cover;*/
         
+    /* } */ 
+
+    .categoryImg{
+      width: 1315px;
+      height: 650px;
     }
 
 /* div{
@@ -129,7 +134,7 @@ header,.logo {
 }
 
 .logo {
-    width: 170px;
+    width: 160px;
     height: 170px;
 }
 
