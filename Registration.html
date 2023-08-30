@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <title> Registration </title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <script>
+        function CheckPassword() {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirm_password").value;
+
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+
+<body class="bodylogin">
+<!-- <h1> HAIROSCOPE </h1>
+<hr> -->
+<header>
+    <a href="NewCat.html"><img src="Black And Beige  Minimalist Aesthetic Modern Simple Typography Salt Logo.png" alt="" class="logo"></a>
+    <a href="pgiantsloginpage.html" class="buttonn wave-effect waves-light btn hoverable"><i class="fas fa-sign-in-alt"></i>Login</a>
+    <a href="Registration.html" class="buttonn wave-effect waves-light btn hoverable"> <i class="fas fa-user-plus"></i>Register</a>
+    <a href="Home.html" class="buttonn wave-effect waves-light btn hoverable"><i class="fas fa-home"></i>Home</a>
+    <a href="NewCat.html" class="buttonn wave-effect waves-light btn hoverable"><i class="fas fa-female"></i>Categories</a>
+    <a href="Sale.html" class="buttonn wave-effect waves-light btn hoverable"><i class="fas fa-tags"></i>Sale</a>
+    <a href="Accessorries.html" class="buttonn wave-effect waves-light btn hoverable"><i class="fas fa-glasses"></i>Accessory</a>
+    <a href="Contact.html" class="buttonn wave-effect waves-light btn hoverable"><i class="fas fa-user"></i>Contact Us</a>
+    
+    <!-- <div class="Search">
+      <span class ="icon">
+         <ion-icon name = "search-outline" class = "SearchBTN"></ion-icon>
+         <ion-icon name="bag-handle-outline"></ion-icon>
+      </span> 
+   </div> 
+
+    <form action="/search" method="get">
+       <input type="text" name="query" placeholder="Search...">
+       <button id="search-icon" onclick="performSearch()"></button> 
+    </form>  -->
+
+   
+
+    <span class ="searchbar">
+        <a href="/search" class="searchIcon"><i class="fas fa-search"></i></a>
+        <a href="/Shop" class="bagIcon"><i class="fas fa-shopping-bag"></i></a>
+        <a href="/cart"class="cartIcon"><i class="fas fa-shopping-cart"></i></a>
+     </span> 
+  </header>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+<script> 
+        let  SearchBTN = document.querySelector('SearchBTN');
+        let closeBTN = document.querySelector('closeBTN ');
+        let SearchBar = document.querySelector('SearchBar');
+ 
+
+        SearchBTN.onclick= function(){
+            SearchBar.classList.add('active');
+            closeBTN.classList.add('active');
+            SearchBTN.classList.add('active');
+        }
+
+        SearchBTN.onclick= function(){
+            SearchBar.classList.remove('active');
+            closeBTN.classList.remove('active');
+            SearchBTN.classList.remove('active');
+        }
+</script>
+ 
+
+<div class= "divlogin">
+    <h1>Create Account   </h1> 
+    <form class="input-Group"  id="Registerform" action="your-server-side-registration-script.php" method="post" onsubmit="return CheckPassword();">
+       <div class="Input-field "> 
+        <i class="fas fa-user"></i><label for="uname"><b>Username</b></label><br>
+        <input type= "text"  id="username" placeholder= "Username "> 
+ <br></div>  
+
+        <div class="Input-field ">
+          <i class="fas fa-envelope"></i><label for="email"><b>Email</b></label><br>
+          <input type= "text"  placeholder="Email"> 
+     <br></div>
+
+     <p> Must be at least 6 characters long </p>
+
+        <div class="Input-field ">
+          <i class="fas fa-key"></i><label for="password"><b>Password</b></label><br>
+          <input type= "text"  placeholder= "Password"> 
+       </div>
+
+       <div class="Input-field ">
+        <i class="fas fa-key"></i><label for="confrim password"><b>Confirm Password</b></label><br>
+       <input type= "text"  placeholder= "Confirm password"> 
+       </div>
+
+       <div class="Checker-Box"> 
+        <input type="checkbox" id=" Accept Conditions "  name="customer[accepts_marketing] " class="Create-Customer--accepts_marketing--checkbox">
+        <label for="Create-Customer-accepts_marketing"> Sign up for the latest HairoScope updates, <br>for special offers, and more. Unsubscribe at any time. <br/> See our Privacy Policy for details.  </label>
+       </div>
+
+       <br> 
+
+       <div class="btn-Field">
+        <center><button type="submit" > Register </button></center>
+      </div>
+
+    </form>
+
+    <script>
+        document.getElementById("Registerform").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const username = document.getElementById("username").value;
+            alert(`Registered as ${username}`);
+            
+            // Perform any necessary form submission to your server here
+            
+            // Redirect to the home page
+            window.location.href = "home.html";
+        });
+    </script>
+</div>
+ 
+</body>
