@@ -46,7 +46,7 @@
 <div class="divlogin2">
 <h1>Log In</h1>
 <hr>
-    <form class="input-Group">
+<form class="input-Group"  id="Registerform" action="your-server-side-registration-script.php" method="post" onsubmit="return CheckPassword();">
         <i class="fas fa-user"></i><label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Username" id="username" name="uname" required maxlength="20">
 <br>
@@ -64,7 +64,9 @@
 	  <br>
 	  <br>
 	  <br>
-	   <span class="psw"><a href="#"> Forgot password?</a></span>
+	   <span class="psw"><a href="#"> Forgot password?</a></span><br>
+       <br>
+       <span class="psw"><a href="Registration.html"><i class="fas fa-user-plus"></i>Register Here</a></span>
     </label>
 </form>
 
